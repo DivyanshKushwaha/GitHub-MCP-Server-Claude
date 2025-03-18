@@ -37,7 +37,7 @@ D:/MCP-Project/
 
 ### Prerequisites
 
-- Python 3.12
+- Python >=3.10
 - GitHub personal access token (for authenticated requests)
 - `conda` or `venv` for virtual environment management
 
