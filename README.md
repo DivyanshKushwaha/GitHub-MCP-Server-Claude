@@ -15,7 +15,7 @@ This project is built using Python and leverages `httpx` for asynchronous API ca
 
 ## Project Structure
 ```bash
-D:/MCP-Project/ 
+D:/MCP_Project/ 
 |----.env
 │----.gitignore
 │----claude_desktop_config.json  (Create this file in C:\Users\your_username\AppData\Roaming\Claude\)
@@ -41,24 +41,30 @@ D:/MCP-Project/
 - GitHub personal access token (for authenticated requests)
 - `conda` or `venv` for virtual environment management
 
-### Installation
+### Setup and Usage
 
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/DivyanshKushwaha/GitHub-MCP-Server-Claude.git
    cd GitHub-MCP-Server-Claude
    ```
-2. **Install Dependencies**
+2. **Create Python environment**
+```bash 
+python -m venv venv
+source venv/bin/activate  
+```
+
+3. **Install Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **Set Up Environment Variables (Create .env file)**
+4. **Set Up Environment Variables (Create .env file)**
 ```bash
 GITHUB_TOKEN=your_personal_access_token
 ```
 
-4. **Setup claude_desktop_config.json**
+5. **Setup claude_desktop_config.json**
 
 ```bash
 {
@@ -83,6 +89,6 @@ GITHUB_TOKEN=your_personal_access_token
     - "D:/MCP_Project/main.py": Specifies the path to the main.py script, which contains the implementation of the MCP server.
 
 
-5. **Launch the Claude Desktop Application**
+6. **Launch the Claude Desktop Application**
 - Open the Claude Desktop Application. 
 - It will use the MCP Server as configured in the claude_desktop_config.json file to fetch and process data.
